@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Flexbox</title>
+    <meta name="description" content="Mise en page en flexbox">
+
+    <!-- Font awesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="accueil.css">
+
+
+
+</head>
+
+<body>
+   <header>
+       <nav>
+           <a href="index.html"><img src="img/logo.jpg" alt = "Hello World"> </a>
+           <a href="#citytrip">City Trip</a>
+           <a href="#">Blog</a>
+           <a href="#contact">Contact</a>
+           <a href="articles/index copy.html" target="_blank">les chats domestiques  </a>
+       </nav>
+   </header> 
+
+   <main>
+       <section id = "intro">
+           <article>
+            <h1>La mise en page avec Flexbox</h1>
+
+            <p>Hello World est un blog dédié au voyage. Vous y trouverez des conseils destinés 
+                aux étudiants pour mieux voyager et moins cher. Visite de villes, incontournables
+                à voir et à faire, conseils sur le logement et les bonnes adresses pour manger et
+                pour sortir.</p>            
+           </article>
+           <aside>
+               <h2>Les derniers articles du blog </h2>
+               <ul>
+                    <li><a href="#">Que faire à Marseille </a></li>
+                    <li><a href="#">Visiter Barcelone en Segway </a></li>
+                    <li><a href="#">Visiter Amsterdam à vélo</a></li>
+                    <li><a href="#">Paris pas cher </a></li>
+               </ul>
+
+           </aside>
+       </section>
+
+       <section id = "citytrip">
+        <article>
+            <h2><hr>Séville</h2>
+            <img src="img/seville.jpg" alt="Séville,Espagne">
+            <p><hr>Séville, capitale de l'Andalousie, est l'une des plus belles villes d'Espagne.
+                Ses monuments phrases comme sa cathédrale, l'Alcazar ou plus récemment le 
+                place d'Espagne ainsi que le Metropol Parasol témoignent de son incroyable 
+                histoire.
+            </p>
+
+        </article>
+
+        <article>
+            <h2>Cracovie</h2>
+            <img src="img/cracovie.jpg" alt="Cracovie, Pologne">
+            <p>Cracovie est l'une de ces villes dont on parle assez peu. Pourtant Cracovie
+                 est l'une des plus belles villes d'Europe. Son histoire est fascinante. 
+                 Visite des immenses mines de Sel ou encore des camps de Auschwitz, Cracovie 
+                 est une ville qui mérite d'être visitée.
+            </p>
+        </article>
+        <article>
+            <h2>Valence</h2>
+            <img src="img/valence.jpg" alt="Valence, Espagne">
+            <p>Troisième plus grande ville d'Espagne, Valence recèle de chose à voir et à 
+                faire. Incontournable d'une visite de la ville, la célèbre cité des arts et 
+                des sciences est l'une des merveilles de Valence tout comme son parc de la 
+                Turia, véritable poumon de la ville.
+            </p>
+            
+        </article>
+    </section>
+
+   
+    <section id = "Contact">
+        <h2>Nous contacter</h2>
+        <h3><i class="fas fa-globe-europe fa-spin"></i></i>Hello World</h3>
+        <address>
+            41, boulevard Vauban
+            <br>59046 Lille Cedex<br>
+            <a href="tel:+33320304050"><i class="fas fa-phone"></i>03 20 30 40 50</a><br>
+            <a href="mailto:contact@helloworld.fr"><i class="far fa-envelope-open"></i>contact@helloworld.fr</a><br>
+        </address>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2530.6274486344446!2d3.046556915205204!3d50.63403728200127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2d578c8d161ab%3A0x23fd816717322432!2s41%20Boulevard%20Vauban%2C%2059000%20Lille!5e0!3m2!1sfr!2sfr!4v1605273681694!5m2!1sfr!2sfr"  allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+        <!--nombre de produit que l'on veut commander-->
+        <form>
+            <div>
+              <label for="tentacles">nombre de commande (0-100):</label>
+              <input type="number" id="tentacles" name="tentacles"  min="0" max="100" placeholder="Quantité" name="produit1" required>
+              <span class="validity"></span>
+            </div>
+
+            <div>
+              <input type="submit">
+            </div>
+        </form>
+
+        <!--formulaire de contact-->
+        <form action="/ma-page-de-traitement" method="post">
+            <div>
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="user_name">
+            </div>
+            <div>
+                <label for="mail">e-mail :</label>
+                <input type="email" id="mail" name="user_mail">
+            </div>
+            <div>
+                <label for="msg">Message :</label>
+                <textarea id="msg" name="user_message"></textarea>
+            </div>
+        </form>
+
+    </section>
+
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/y_zk8f6aBQk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+    <label for="q">Quantité: </label>
+<select id="qt" name="q">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+</select>
+<button type="button" class="add-to-cart" data-id="432" data-name="Pastilles" data-price="29,00" data-weight="97" data-url="/produit/pastilles-anti-douleurs/">Ajouter au panier</button>
+
+    <div class="dropdown">
+        <div id="cart">
+            <p><span id="in-cart-items-num">0</span> Articles</p>
+        </div>
+    
+        <ul id="cart-dropdown" hidden>
+            <li id="empty-cart-msg"><a>Votre panier est vide</a></li>
+            <li class="go-to-cart hidden"><a href="/panier/">Voir le panier</a></li>
+        </ul>
+    </div>
+
+    
+</main>
+
+<footer>
+    <section id="basdepage">
+        <p>&copy; 2020 JUNIA ISEN Lille</p>
+    </section>
+    
+</footer>
+</body>
+</html>
