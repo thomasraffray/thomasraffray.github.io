@@ -1,4 +1,4 @@
-@font-face{
+ @font-face{
     font-family: "open Sans";
     font-weight: normal; /*Inclinaison du texte*/
     font-style: normal; /*Inclinaison du texte*/
@@ -39,14 +39,22 @@ img{
 nav{
     border-bottom: 3px solid #34C6DD;
     margin-bottom: 20px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+
 }
 
+@media screen and (min-width: 1024px ){
+    nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
 nav a{
     color: #34C6DD;
     font-size: 1.4 rem;
+    display: block;
+    text-align: center;
+    padding: 15px;
 }
 
 /* Styles du contenu principal de la page*/
@@ -56,7 +64,9 @@ main{
     margin-left: auto;
     margin-right: auto;
 }
-
+h1,h2{
+    line-height: 1.3em ;
+}
 h1{
     font-size: 2rem;
 }
@@ -65,102 +75,55 @@ h2{
     font-size: 1.6rem;
 }
 
-
-
-#intro, #citytrip{
-    display: flex;
-    justify-content: space-between;
+@media screen and (min-width: 768px){
+    #intro, #citytrip{
+        display: flex;
+        justify-content: space-between;
+        
+    }
     
+    #intro article{
+        flex-basis: 62%;
+    }
+    
+    #intro aside, #citytrip article{
+        flex-basis: 31%;
+    }
 }
 
-#intro article{
-    flex-basis: 62%;
+#citytrip h2{
+    text-align: center;
+}
+#citytrip article {
+    text-align: justify;
 }
 
-#intro aside, #citytrip article{
-    flex-basis: 31%;
+address{
+    margin-bottom: 10px;
 }
 
 #basdepage{
     background-color: #34C6DD;
 }
 
+iframe{
+    width: 100%;
+    height: 400px;
+    border: 10;
+}
 
-/*nombre de produit que l'on veut acheter*/
-div {
-    margin-bottom: 10px;
-  }
-  
-  input:invalid+span:after {
-    content: '✖';
-    padding-left: 5px;
-  }
-  
-  input:valid+span:after {
-    content: '✓';
-    padding-left: 5px;
+footer{
+    text-align: center;
+    background-color: #34C6DD;
+    color: #FFF;
+    padding: 5px;
+}
+
+/*pour l'impression sans le header le et footer*/
+@media print{
+    header, footer {
+        display: none;
     }
-
-
-
-
-/*pour le formulaire de contact*/
-    form {
-        /* Uniquement centrer le formulaire sur la page */
-        margin: 0 auto;
-        width: 400px;
-        /* Encadré pour voir les limites du formulaire */
-        padding: 1em;
-        border: 1px solid #CCC;
-        border-radius: 1em;
-      }
-      
-      form div + div {
-        margin-top: 1em;
-      }
-      
-      label {
-        /* Pour être sûrs que toutes les étiquettes ont même taille et sont correctement alignées */
-        display: inline-block;
-        width: 400px;
-        text-align: left;
-      }
-      
-      input, textarea {
-        /* Pour s'assurer que tous les champs texte ont la même police.
-           Par défaut, les textarea ont une police monospace */
-        font: 1em sans-serif;
-      
-        /* Pour que tous les champs texte aient la même dimension */
-        width: 300px;
-        box-sizing: border-box;
-      
-        /* Pour harmoniser le look & feel des bordures des champs texte */
-        border: 1px solid #999;
-      }
-      
-      input:focus, textarea:focus {
-        /* Pour souligner légèrement les éléments actifs */
-        border-color: #000;
-      }
-      
-      textarea {
-        /* Pour aligner les champs texte multi‑ligne avec leur étiquette */
-        vertical-align: top;
-      
-        /* Pour donner assez de place pour écrire du texte */
-        height: 5em;
-      }
-      
-      .button {
-        /* Pour placer le bouton à la même position que les champs texte */
-        padding-left: 90px; /* même taille que les étiquettes */
-        
-      }
-      
-      button {
-        /* Cette marge supplémentaire représente grosso modo le même espace que celui
-           entre les étiquettes et les champs texte */
-        margin-left: .5em;
+}
 
 
