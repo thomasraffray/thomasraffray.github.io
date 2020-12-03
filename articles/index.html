@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS - Transitions</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<a href="index.html">Transitions</a>
+			<a href="transformations.html">Transformations</a>
+			<a href="animations.html">Animations</a>
+		</nav>
+	</header>
+	<main>
+		<h1>CSS - transitions</h1>
+		<article class="color">
+			<h2>Couleur de texte</h2>
+			<p>Le principe de base d'une transition CSS3 est de permettre une transition douce entre l'ancienne valeur et la nouvelle valeur d'une propriété CSS lorsqu'un événement est déclenché :</p>
+			<ul>
+				<li>soit via une pseudo-classe telles que :hover, :focus ou :active</li>
+				<li>soit via JavaScript</li>
+			</ul>
+			<p>Pour définir une nouvelle transition animée, il est nécessaire de préciser au minimum :</p>
+			<ul>
+				<li><code>transition-property</code> : la ou les propriété(s) à animer</li>
+				<li><code>transition-duration</code> : la durée de l'animation</li>
+			</ul>
+			<p>Il existe 2 autres propriétés qui sont optionnelles :</p>
+			<ul>
+				<li><code>transition-timing-function</code> : elle définit la manière dont progresse la transition entre 2 états.</li>
+				<li><code>transition-delay</code> : elle permet de définir un laps de temps avant le déclenchement de chaque transition.</li>
+			</ul>
+		</article>
+		<article class="background">
+			<h2>Couleur de fond</h2>
+			<div class="box"></div>
+		</article>
+		<article class="duration">
+			<h2>La propriété transition-duration</h2>
+			<p>La propriété <code>transition-duration</code> définit la vitesse de l'animation.</p>
+			<div class="flex">
+				<div class="box box1">1s</div>
+				<div class="box box2">5s</div>
+				<div class="box box3">10s</div>
+			</div>
+		</article>
+		<article class="timing">
+			<h2>La propriété transition-timing-function</h2>
+			<p class="linear">Linear : vitesse linéaire</p>
+			<p class="ease">Ease (par défaut) : accélère très vite au début et ralentit à la moitié de la transition</p>
+			<p class="ease-in">Ease In : démarrage lent, accélération progressive à la fin</p>
+			<p class="ease-out">Ease Out : démarrage rapide, ralentit progressivement à la fin</p>
+			<p class=ease-in-out>Ease In Out : accélération au début et à la fin</p>
+			<p></p>
+		</article>
+	</main>
+</body>
+</html>
