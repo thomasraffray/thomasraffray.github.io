@@ -1,0 +1,293 @@
+/*pour les polices*/
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    line-height: 1.4em;
+    color: #444;
+    margin: 0;
+}
+ 
+ 
+ 
+/*s'applique pour toute la page*/
+*{
+    box-sizing: border-box;
+}
+ 
+h1,h2{
+    line-height: 1.2em ;
+}
+h1{
+    font-size: 1.8rem;
+    color: #0DA8DE;
+    margin-bottom: 20px;
+}
+ 
+h2{
+    font-size: 1.6rem;
+    color: #0DA8DE;
+    margin-bottom: 15px;
+}
+ 
+main p{
+    color: #444;
+}
+ 
+#hotel p:hover{
+    color: blue;
+}
+ 
+ 
+ 
+/*_______________________________________________________*/
+/*barre de navigation*/
+/*style hyperline*/
+a {
+    text-decoration: none;
+    color: white;
+}
+ 
+a:hover{
+    text-decoration: underline;
+    color: #1057A1;
+}
+header h1, header h2{
+    color: white;
+}
+nav{
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+}
+ 
+ 
+ 
+ 
+@media screen and (min-width: 1200px ){
+    nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;   
+    }
+}
+ 
+nav a{
+    color: #0DA8DE;
+    font-size: 1.4 rem;
+    display: block;
+    text-align: center;
+    padding: 15px;
+}
+.banniere{
+    display: flex;
+    justify-content: center;
+}
+#intro{
+    text-align: center;
+    margin: 0;
+    color: white;
+    background-image: url("img/plage.jpg");
+    background-position: center ;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    padding: 16%;
+    width: 100%;
+}
+ 
+#intro h1{
+    color: white;
+    font-size: 3rem;
+}
+ 
+#intro h2{
+    color: white;
+    font-size: 1.5rem;
+}
+ 
+ 
+/*________________________________________________________*/
+/*début du main*/
+ 
+@media screen and (min-width: 1200px){
+    main{
+        margin-right: 5%;
+        margin-left: 5%;
+        size:1rem ;
+        line-height: 1.4em;
+    }
+}
+main{
+    margin-right: 0px;
+}
+hr{
+    border-top: 1px solid #DDD;
+}
+ 
+#hotel h3{
+    font-size: 1.5rem;
+    text-align: center;
+}
+ 
+main h1{
+    font-size: 1.8rem;
+    color: #0DA8DE;
+    margin-bottom: 20px;
+}
+ 
+main h2{
+    font-size: 1.6rem;
+    text-align: center;
+    color: #0DA8DE;
+    margin-bottom: 15px;
+}
+ 
+#hotel{
+    color: #444;
+    margin: 20%;
+}
+ 
+@media screen and (min-width: 1200px){
+    #offres{
+        display: flex;
+        justify-content: space-around;
+        color: white;
+        
+    }
+    
+     #article{
+        flex-basis: 50%;
+    }
+}
+@media screen and (max-width: 1200px){
+    #offres{
+        align-items: center;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        
+    }  
+    main{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+#ccl {
+    text-align: center;
+}
+.famille, .amoureux, .theme{  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3em;
+    margin: 10px;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    width: 375px;
+    height: 250px;
+}
+ 
+.famille{
+    background-image: url("img/vacances-en-famille.jpg");
+}
+.amoureux{
+    background-image: url("img/vacances-en-couple.jpg");
+}
+.theme{
+    background-image: url("img/sejour-a-theme.jpg");
+}
+#offres :hover{
+    filter: sepia(50%);
+}
+ 
+ 
+ 
+/*_____________________________________________________________*/
+/*footer*/
+@media screen and (min-width: 768px){
+    #foot{
+        display: flex;
+        justify-content: space-around;  
+        text-decoration: white;
+    }
+    
+     #article{
+        flex-basis: 50%;
+        
+    }
+}
+ 
+#foot h2{
+    color: white;
+}
+ 
+#foot2{
+    background-color: #0DA8DE;
+    color:white;
+    padding: 0.3rem;
+    line-height: 2em ;
+}
+ 
+#basdepage2{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #1057A1;
+    color: white;
+    padding: 0%;
+}
+@media screen and (max-width: 1200px){
+    #foot{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+   #basdepage2{ 
+        color: white;
+        text-align: center;
+        margin-left: 0%;
+   } 
+}
+ 
+footer aside a{
+    color: white;
+    font-size: 2rem;
+    padding: 0.3rem;
+}
+/*_________________________________________________________*/
+/*pour l'impression sans le header le et footer*/
+@media print{
+    header, footer {
+        display: none;
+    }
+}
+ 
+
+/*____________________________________________________________*/
+/*pour la carte*/
+#contact, #adresse{
+    margin-right: 5%;
+    margin-left: 5%;
+    size:1rem ;
+    line-height: 1.4em;
+}
+
+#adresse a {
+    text-decoration: none;
+    color: #0DA8DE;
+}
+
+iframe{
+    width: 100%;
+    height: 400px;
+    border: 0;
+}
+
+#adresse{
+    margin-bottom: 20px;
+}
+
+#photo{
+    width: 100%;
+}
+
+.main2{
+    margin-right: 0px;
+}
