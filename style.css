@@ -1,13 +1,28 @@
 /*pour les polices*/
+@font-face {
+    font-family: "MontserratB";
+    src: url("Font/Montserrat/Montserrat-Bold.ttf");
+}
+@font-face{
+    font-family: "MontserratR";
+    src: url("Font/Montserrat/Montserrat-Regular.ttf");
+}
+@font-face{
+    font-family: "BreeSerif";
+    src: url("Font/Bree_Serif/BreeSerif-Regular.ttf");
+}
+
 body{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'MontserratR', sans-serif;
     font-size: 1rem;
     line-height: 1.4em;
     color: #444;
     margin: 0;
 }
  
- 
+#intro h1, h2{
+    font-family: 'BreeSerif', sans-serif;
+}
  
 /*s'applique pour toute la page*/
 *{
@@ -53,6 +68,7 @@ a:hover{
 }
 header h1, header h2{
     color: white;
+    text-shadow: 1px 1px 2px black;h
 }
 nav{
     margin-bottom: 20px;
@@ -183,6 +199,7 @@ main h2{
     background-repeat: no-repeat;
     width: 375px;
     height: 250px;
+    text-shadow: 1px 1px 2px black;
 }
  
 .famille{
